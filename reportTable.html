@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gradeReport</title>
+    <script type="text/javascript" src="loadXML.js">
+    </script>
+    <style type="text/css">
+        table { 
+            -webkit-box-shadow: 8px 0px 0px 0px #DCD0C0, 0px 8px 0px 0px #B1938B, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #DA635D, 5px 5px 15px 5px rgba(0,0,0,0); 
+            box-shadow: 8px 0px 0px 0px #DCD0C0, 0px 8px 0px 0px #B1938B, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #DA635D, 5px 5px 15px 5px rgba(0,0,0,0); 
+            font-size: 40px;
+            margin-top: 15%;
+        }
+    </style>
+</head>
+<body>
+    <table id="table" align= "center">
+        <tr>
+            <th>id</th>
+            <th>student</th>
+            <th>grade</th>
+        </tr>
+    </table>
+    <script>
+        var xmlDoc = loadXMLDoc("report.xml");
+        createTable(xmlDoc);
+        changeGradesView();
+    </script>
+</body>
+</html>
